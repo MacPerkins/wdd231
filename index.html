@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="author" content="Matthew Perkins"/>
+    <meta
+      name="description"
+      content="WDD 231 - Dynamic Web Fundamentals - Matthew Perkins. A webpage to showcase dynamic web fundamentals."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WDD 231: Dynamic Web Fundamentals - Matthew Perkins</title>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <script src="scripts/getdates.js" defer ></script>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <img src="images/me.jpg" alt="Image of page author" />
+        <span>Matthew Perkins</span>
+      </div>
+    <nav>
+      <button class="hamburger" aria-label="Toggle navigation">
+        &#9776;
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="https://byui.instructure.com/">Chamber</a></li>
+        <li><a href="https://github.com/MacPerkins">GitHub Profile</a></li>
+        <li><a href="https://www.linkedin.com/in/mperkins-sdev101/">LinkedIn</a></li>
+      </ul>
+    </nav>
+    </header>
+    <main>
+        <h2>Home</h2>
+    <section class="coursework-card">
+        <h2>Course Work</h2>
+        <div class="my-info">
+            <ul>
+                <li><a href="assignments/lesson01/index.html">Lesson 01</a></li>
+                <li><a href="assignments/lesson02/index.html">Lesson 02</a></li>
+                <li><a href="assignments/lesson03/index.html">Lesson 03</a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="utah-card">
+        <h2>Highland, Utah</h2>
+        <img src="images/us-ut-flag-02.png" alt="utah-flag" />
+        <p>Utah Flag</p>
+    </section>
+    <section class="courses-card">
+        <h2>Web and Computer Programming Certificate</h2>
+        <div class="filter">
+            <ul>
+                <li><button data-filter="all">All</button></li>
+                <li><button data-filter="CSE">CSE</button></li>
+                <li><button data-filter="WDD">WDD</button></li>
+            </ul>
+        </div>
+        <div class="courses">
+            <ul></ul>
+        </div>
+    </section>
+    </main>
+    <footer>
+      <p>
+        &copy;<span id="currentYear"></span> - Matthew Perkins - Utah, United
+        States
+      </p>
+      <p id="lastModified">Last Modified on: placeholder</p>
+    </footer>
+  </body>
+</html>
