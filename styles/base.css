@@ -152,6 +152,10 @@ section li {
     background-color: #508a91a6;
 }
 
+.courses-card p {
+    text-align: center;
+}
+
 .filter {
     display: flex;
     padding: 2rem;

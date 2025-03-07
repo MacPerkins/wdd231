@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     navLinks.classList.toggle('show');
   });
 
-  // Dynamically populate the courses section
+  const credits = document.querySelector('.credits');  
   const coursesList = document.querySelector('.courses ul');
   const courses = [
     {
@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
       certificate: 'Web and Computer Programming',
       description: 'This course builds on prior experience in Web Fundamentals and programming. Students will learn to create dynamic websites that use JavaScript to respond to events, update content, and create responsive user experiences.',
       technology: ['HTML', 'CSS', 'JavaScript'],
-      completed: true
+      completed: false
     },
     {
       subject: 'WDD',
@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
       certificate: 'Web and Computer Programming',
       description: 'This course builds on prior experience with Dynamic Web Fundamentals and programming. Students will focus on user experience, accessibility, compliance, performance optimization, and basic API usage.',
       technology: ['HTML', 'CSS', 'JavaScript'],
-      completed: true
+      completed: false
     }
   ];
 
@@ -98,20 +98,26 @@ document.addEventListener('DOMContentLoaded', () => {
     filteredCourses.forEach(course => {
       const courseItem = document.createElement('li');
       courseItem.innerHTML = `<a href="#">${course.subject} ${course.number}: ${course.title}</a>`;
+      if (course.completed) {
+        courseItem.style.backgroundColor = '#508a91a6';
+      }
       coursesList.appendChild(courseItem);
     });
+    totalCredits(filteredCourses);
   }
 
-  displayCourses('all'); // Display all courses by default
+  function totalCredits(filteredCourses) {
+    const totalCredits = filteredCourses.reduce((sum, course) => sum + course.credits, 0);
+    credits.textContent = `${totalCredits}`;
+  }
+
+  displayCourses('all');
 
   const filterButtons = document.querySelectorAll('.filter button');
   filterButtons.forEach(button => {
     button.addEventListener('click', () => {
-      // Remove active class from all buttons
       filterButtons.forEach(btn => btn.classList.remove('active'));
-      // Add active class to the clicked button
       button.classList.add('active');
-      // Get the filter value and display the courses
       const filter = button.getAttribute('data-filter');
       displayCourses(filter);
     });
