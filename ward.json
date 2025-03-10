@@ -1,0 +1,28 @@
+{
+    "family-name": "Brown",
+    "movein-date": "2023-09-01",
+    "family-count": 4,
+    "bishopric-visited": true,
+    "family-members": [
+        {
+            "name": "John Brown",
+            "dob":  "1980-05-15",
+            "gender": "male"
+        },
+        {
+            "name": "Jane Brown",
+            "dob":  "1982-07-20",
+            "gender": "female"
+        },
+        {
+            "name": "Emily Brown",
+            "dob":  "2010-03-30",
+            "gender": "female"
+        },
+        {
+            "name": "Michael Brown",
+            "dob":  "2012-11-10",
+            "gender": "male"
+        }
+    ]
+}
