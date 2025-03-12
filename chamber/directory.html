@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highland City Chamber</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="icon" href="images/favicon.ico">
+    <meta property="og:title" content="Matthew Perkins Home Page"/>
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="WDD 231 - Dynamic Web Fundamentals - Matthew Perkins. A webpage to showcase dynamic web fundamentals."/>
+    <meta property="og:image" content="https://macperkins.github.io/wdd231/chamber/images/chamber-logo.png" />
+    <meta property="og:url" content="https://macperkins.github.io/wdd231/" />
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo-link">
+            <img src='images/chamber-logo.png' alt='Highland City Chamber logo'>
+                <h1>Highland
+                    Chamber of Commerce
+                </h1>
+        </a>
+            <nav>
+                <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+                <ul id="primaryNav">
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="#">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <div class="view-selection">
+            <button type="button" class="grid-view">Grid View</button>
+            <button type="button" class="list-view">List View</button>
+        </div>
+        <div class="grid"></div>
+    </main>
+    <footer>
+        <div id="box1">
+            <div id="sub-box1">
+                <p><strong>Highland Chamber of Commerce</strong></p>
+                <p>123 Random address rd, Highland UT</p>
+            </div>
+            <div id="sub-box2">
+                <p>info@Highlandcc.com</p>
+                <p>+1(801) 123-4567</p>
+                <a href="wireframes.html" class="location-map">Location Map/Wireframes</a>
+            </div>
+        </div>
+        <div>
+            <a href="https://www.youtube.com/" class="social-link"><img src="images/yt-logo.avif" alt="YouTube Logo"></a>
+            <a href="https://www.twitter.com/" class="social-link"><img src="images/logo-white.png" alt="Twitter Logo"></a>
+            <a href="https://www.linkedin.com/" class="social-link"><img src="images/linkedin.png" alt="LinkedIn Logo"></a>
+        </div>
+        <div id="box2">
+            <div id="small">
+                <p>&copy; 2023 - Highland Chamber</p>
+                <p><strong>Matthew Perkins</strong></p>
+                <p>WDD 231 Project</p>
+            </div>
+            <p id="larger">&copy; 2025 - Highland Chamber | <strong>Matthew Perkins</strong> | WDD 231 Project |</p>
+            <div>
+                <p id="last-modified">Last Modified:</p>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/directory_cards.js"></script>
+</body>
+</html>

@@ -1,0 +1,245 @@
+body {
+    background-color: #f6f8f4;
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    margin: auto;
+}
+
+/* header {
+    display: flex;
+    flex-direction: row;
+    background-color: #324c86;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: #f6f8f4;
+    text-shadow: 2px 2px 4px #000000;
+} */
+
+/* ----------Header & Nav CSS---------- */
+
+nav button {
+    width: 100%;
+    margin: .2rem 2vw;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #f6f8f4;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2vw;
+    text-decoration: none;
+    color: #f6f8f4;
+    border-top: 1px solid rgba(0, 0, 0, 0.356);
+}
+
+nav a:hover {
+    background-color: #cae9ff;
+    border: 1px solid black;
+    border-radius: 15px 5px;
+}
+
+nav ul {
+    display: none;
+}
+
+nav ul.open {
+    display: block;
+}
+
+#hamburgerBtn span:nth-child(1) {display: block;}
+#hamburgerBtn span:nth-child(2) {display: none;}
+
+#hamburgerBtn.open span:nth-child(1) {display: none;}
+#hamburgerBtn.open span:nth-child(2) {display: block;}
+
+header a img {
+    width: 73px;
+    height: 100px;
+}
+
+header a, header div {
+    display: flex;
+    text-decoration: none;
+    color: #f6f8f4;
+    align-items: center;
+    padding: 5px;
+}
+
+header .social-link img {
+    display: flex;
+    flex-direction: row;
+    width: 25px;
+    height: 25px;
+    align-self: center;
+}
+
+header h1 {
+    white-space: pre-line;
+    font-size: 1rem;
+}
+
+header, nav {
+    display: flex;
+    background-color: #324c86;
+    padding: 5px;
+}
+
+nav {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+}
+
+/* ----------Directory CSS---------- */
+
+main div.view-selection {
+    align-items: center;
+    text-align: center;
+    margin: 15px;
+    padding: 15px;
+}
+
+button.grid-view, button.list-view {
+    padding: 1rem;
+	font-weight: 700;
+    font-family: 'Play', sans-serif;
+}
+
+main div.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	align-items: center;
+}
+
+main div.grid section {
+    margin: 5px;
+    padding: 10px;
+    border: 2px solid grey;
+    box-shadow: 0 0 7px grey;
+    background-color: white;
+}
+
+main div.grid section img {
+    width: 100%;
+    height: auto;
+}
+
+main div.grid div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-top: 2px solid black;
+}
+
+main div.grid div a {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+main div.grid div p1, main div.grid div p2, main div.grid div p3, main div.grid div link  {
+    display: block;
+    font-size: 1rem;
+    font-family: 'Play', sans-serif;
+    margin-bottom: 2px;
+    padding-top: 5px;
+}
+
+.list {
+	display: block;
+	flex-direction: row;
+}
+
+.list section div {
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	margin: 25px;
+	padding: 0.25rem;
+}
+
+.list section img {
+	display: none;
+}
+
+.list section div p1, p2, p3, .list section div a {
+    font-family: 'Play', sans-serif;
+    margin-top: 2px;
+    padding: 5px;
+}
+
+.list section:nth-child(even) {
+	background-color: #cae9ff;
+}
+
+/* ----------Footer CSS---------- */
+
+footer {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+    text-align: center;
+	padding: 5px;
+    background-color: #577399;
+    font-family: 'Play', sans-serif;
+}
+
+footer img {
+    width: 73px;
+    height: 100px;
+}
+
+footer #box2  {
+    margin: 10px;
+    border-top: 1px solid black;
+    font-size: 1em;
+}
+
+footer p {
+    margin: 3px;
+}
+
+footer .location-map {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+footer .location-map:hover {
+    border-bottom: 1px solid black;
+}
+
+footer #box div {
+    padding: 3px;
+}
+
+main h1 {
+    padding: .5rem;
+    font-size: 1.25rem;
+}
+
+footer #box2 #larger {
+    display: none;
+}
+
+main p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1em;
+    text-align: left;
+    padding: 5px;
+    white-space: pre-line;
+}
