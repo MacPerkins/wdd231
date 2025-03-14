@@ -264,7 +264,11 @@ footer p {
     text-align: left;
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 650px) {
+    nav button {
+        display: none;
+    }
+
     .nav-links {
         display: flex;
         flex-direction: row;
@@ -280,7 +284,7 @@ footer p {
     }
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (min-width: 950px) {
     body {
         display: flex;
         flex-direction: column;
@@ -291,9 +295,13 @@ footer p {
         font-size: 1.5rem;
     }
 
-    nav ul {
-        flex-direction: column;
+    nav {
+        flex-direction: row;
         height: auto;
+    }
+
+    nav button {
+        display: none;
     }
 
     nav ul li {

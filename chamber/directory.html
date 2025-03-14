@@ -9,15 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/large.css">
     <link rel="icon" href="images/favicon.ico">
-    <meta property="og:title" content="Matthew Perkins Home Page"/>
-    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Matthew Perkins Home Page">
+    <meta property="og:type" content="website">
     <meta
       property="og:description"
-      content="WDD 231 - Dynamic Web Fundamentals - Matthew Perkins. A webpage to showcase dynamic web fundamentals."/>
-    <meta property="og:image" content="https://macperkins.github.io/wdd231/chamber/images/chamber-logo.png" />
-    <meta property="og:url" content="https://macperkins.github.io/wdd231/" />
+      content="WDD 231 - Dynamic Web Fundamentals - Matthew Perkins. A webpage to showcase dynamic web fundamentals.">
+    <meta property="og:image" content="https://macperkins.github.io/wdd231/chamber/images/chamber-logo.png">
+    <meta property="og:url" content="https://macperkins.github.io/wdd231/">
 </head>
 <body>
     <header>
@@ -27,13 +26,13 @@
                     Chamber of Commerce
                 </h1>
         </a>
-            <nav>
+            <nav >
                 <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
                 <ul id="primaryNav">
-                    <li><a href="discover.html">Discover</a></li>
-                    <li><a href="#">Directory</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
                     <li><a href="join.html">Join</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="discover.html">Discover</a></li>
                 </ul>
             </nav>
     </header>
@@ -53,27 +52,25 @@
             <div id="sub-box2">
                 <p>info@Highlandcc.com</p>
                 <p>+1(801) 123-4567</p>
-                <a href="wireframes.html" class="location-map">Location Map/Wireframes</a>
             </div>
         </div>
-        <div>
+        <div id="links">
             <a href="https://www.youtube.com/" class="social-link"><img src="images/yt-logo.avif" alt="YouTube Logo"></a>
             <a href="https://www.twitter.com/" class="social-link"><img src="images/logo-white.png" alt="Twitter Logo"></a>
             <a href="https://www.linkedin.com/" class="social-link"><img src="images/linkedin.png" alt="LinkedIn Logo"></a>
         </div>
         <div id="box2">
             <div id="small">
-                <p>&copy; 2023 - Highland Chamber</p>
+                <p>&copy; <span class="currentYear"></span> - Highland Chamber</p>
                 <p><strong>Matthew Perkins</strong></p>
                 <p>WDD 231 Project</p>
             </div>
-            <p id="larger">&copy; 2025 - Highland Chamber | <strong>Matthew Perkins</strong> | WDD 231 Project |</p>
+            <p id="larger">&copy; <span class="currentYear"></span> - Highland Chamber | <strong>Matthew Perkins</strong> | WDD 231 Project |</p>
             <div>
                 <p id="last-modified">Last Modified:</p>
             </div>
         </div>
     </footer>
     <script src="scripts/scripts.js"></script>
-    <script src="scripts/directory_cards.js"></script>
 </body>
 </html>

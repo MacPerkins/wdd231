@@ -6,11 +6,7 @@ function toggleMenu() {
 const x = document.getElementById('hamburgerBtn');
 x.onclick = toggleMenu;
 
-let last_modif = new Date(document.lastModified);
-
-const modif_date = `Last Modified: ${last_modif}`;
-document.querySelector("#last-modified").textContent = modif_date;
-
+const last_modif = new Date(document.lastModified);
 document.querySelector("#last-modified").textContent = `Last Modification: ${document.lastModified}`;
 
 const directoryUrl = 'data/members.json';
@@ -30,7 +26,6 @@ const displayBusinesses = (businesses) => {
         p1.textContent = `${business.name}`;
         p2.textContent = `${business.address}`;
         p3.textContent = `${business.phone}`;
-        p2.textContent = `${business.address}`;
         link.textContent = `${business.link}`;
 
         portrait.setAttribute('src', business.imagesrc);
@@ -56,7 +51,7 @@ async function getBusinesses() {
     const response = await fetch(directoryUrl);
     const data = await response.json();
     displayBusinesses(data.businesses);
-};
+}
 
 getBusinesses();
 
@@ -64,15 +59,17 @@ const gridbutton = document.querySelector(".grid-view");
 const listbutton = document.querySelector(".list-view");
 const display = document.querySelector("div.grid");
 
-
 gridbutton.addEventListener("click", () => {
-	display.classList.add("grid");
-	display.classList.remove("list");
+    display.classList.add("grid");
+    display.classList.remove("list");
 });
 
 listbutton.addEventListener("click", showList);
 
 function showList() {
-	display.classList.add("list");
-	display.classList.remove("grid");
+    display.classList.add("list");
+    display.classList.remove("grid");
 }
+
+const currentYear = new Date().getFullYear();
+document.querySelector('.currentYear').textContent = currentYear;
