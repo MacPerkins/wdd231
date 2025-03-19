@@ -8,19 +8,20 @@
     <meta name="description" content="Highland Chamber of Commerce is a local business directory for Highland, Utah. It provides information about local businesses and services.">
     <title>Highland Chamber of Commerce</title>
     <script src="scripts/scripts.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/spotlights.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="icon" href="images/favicon.ico">
-    <meta property="og:title" content="Highland Chamber of Commerce - Directory">
+    <meta property="og:title" content="Highland Chamber of Commerce - Home">
     <meta property="og:type" content="website">
     <meta
-      property="og:description"
-      content="Highland Chamber of Commerce is a local business directory for Highland, Utah. It provides information about local businesses and services.">
+        property="og:description"
+        content="Highland Chamber of Commerce is a local business directory for Highland, Utah. It provides information about local businesses and services.">
     <meta property="og:image" content="https://macperkins.github.io/wdd231/chamber/images/chamber-logo.png">
-    <meta property="og:url" content="https://macperkins.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://macperkins.github.io/wdd231/chamber/index.html">
 </head>
 <body>
     <header>
@@ -41,14 +42,66 @@
             </nav>
     </header>
     <main>
-        <h1>Highland
-            Chamber of Commerce
-        </h1>
-        <div class="view-selection">
-            <button type="button" class="grid-view">Grid View</button>
-            <button type="button" class="list-view">List View</button>
+        <div class="tab1">
+            <h1>Welcome to Highland's Chamber of Commerce</h1>
+            <a href="join.html">Join The Chamber</a>
+            <img src="images/hero.jpg" alt="Highland City" sizes="50vw"
+                srcset="images/hero-small.webp 400w,
+                        images/hero-medium.webp 800w,
+                        images/hero-large.webp 1200w"
+            >
         </div>
-        <div class="grid"></div>
+        <div class="home-grid">
+            <div class="tab2">
+                <h2>Events</h2>
+                <p>Join us for the grand opening of The Diamond Shack, Thursday at 1:00 p.m.</p>
+                <a href="#">more info...</a>
+            </div>
+            <div class="tab3">
+                <h2>Current Weather</h2>
+                <figure>
+                    <div class="weather">
+                        <img id="weather-icon" src="#" alt="#">
+                        <p><span id="current-temp"></span></p>
+                    </div>
+                    <figcaption></figcaption>
+                </figure>
+            </div>
+            <div class="tab3">
+                <h2>Weather Forecast</h2>
+                <div>
+                    <p><span id="dayOne"></span></p>
+                    <p><span id="dayTwo"></span></p>
+                    <p><span id="dayThree"></span></p>
+                </div>
+            </div>
+        </div>
+            <div class="tab5">
+                <div id="sub-tab1">
+                    <h2 class="company">#</h2>
+                    <img class="tab-img" src="#" alt="#">
+                    <div>
+                        <a class="website" href="#">#</a>
+                        <p class="phone-number">#</p>
+                    </div>
+                </div>
+                <div id="sub-tab2">
+                    <h2 class="company">#</h2>
+                    <img class="tab-img" src="#" alt="#">
+                    <div>
+                        <a class="website" href="#">#</a>
+                        <p class="phone-number">#</p>
+                    </div>
+                </div>
+                <div id="sub-tab3">
+                    <h2 class="company">#</h2>
+                    <img class="tab-img" src="#" alt="#">
+                    <div>
+                        <a class="website" href="#">#</a>
+                        <p class="phone-number">#</p>
+                    </div>
+                </div>
+            </div>
     </main>
     <footer>
         <div id="box1">
