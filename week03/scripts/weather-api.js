@@ -1,8 +1,13 @@
+import dotenv from 'dotenv';
+
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
+dotenv.config();
 
-const url = 'https://api.openweathermap.org/data/2.5/weather?lat=49.74924&lon=6.63675&units=imperial&appid=86cd2c7952220e29d002daf2bd636fed';
+const API_KEY = process.env.API_KEY;
+
+const url = `https://api.openweathermap.org/data/2.5/weather?lat=49.74924&lon=6.63675&units=imperial&appid=${API_KEY}`;
 
 async function apiFetch() {
     try {
