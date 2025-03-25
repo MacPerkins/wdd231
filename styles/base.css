@@ -4,6 +4,7 @@ body {
     height: 75dvh;
     grid-template: auto 1fr auto / 1fr auto;
     background-color: white;
+    font-family: "Big Shoulders Display", sans-serif;
 }
 
 span, h1, h2, nav ul li a {
@@ -31,6 +32,21 @@ header {
     height: 200px;
     border-radius: 5px;
     box-shadow: 5px 5px 5px grey;
+    animation: fadeIn 2s ease-in-out;
+}
+
+header span {
+    padding: 1rem;
+    animation: fadeIn 5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 nav {
@@ -67,6 +83,43 @@ nav ul li a:hover  {
 
 section ul li a:hover {
     border-bottom: 2px solid black;
+}
+
+dialog {
+    border: 1px solid rgba(0, 0, 0 / 0.1);
+    border-radius: .25rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    max-width: 600px;
+    text-align: left;
+    animation: fadeIn 1s ease-in-out;
+}
+
+dialog p {
+    text-align: left;
+    padding: 2rem;
+}
+
+dialog h3 {
+    font-size: 1.5rem;
+}
+
+::backdrop {
+    background: rgba(0, 0, 0 / 0.5);
+}
+
+dialog button {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: .5rem 1rem;
+    border: 1px solid rgba(0, 0, 0 / 0.1);
+}
+
+dialog button:hover {
+    background-color: #ffffffa6;
 }
 
 main {
@@ -143,6 +196,7 @@ section li {
     margin: 1rem auto;
     box-shadow: 5px 5px 5px grey;
     display: block;
+    animation: fadeIn 5s ease-in-out;
 }
 
 .courses-card h2 {
@@ -155,6 +209,10 @@ section li {
 
 .courses-card p {
     text-align: center;
+}
+
+.courses-card dialog p {
+    text-align: left;
 }
 
 .filter {
@@ -189,21 +247,32 @@ section li {
 }
 
 .courses ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
     padding: 0;
     list-style-type: none;
-    margin: 0  auto;
+    margin: 0 auto;
 }
 
-.courses ul li {
-    flex: 1 1 calc(33.333% - 1rem);
-    margin: 0.5rem;
-    text-align: center;
+.courses ul li button {
+    width: 100%;
+    text-align: left;
     border: 2px solid black;
     border-radius: 5px;
     box-shadow: 5px 5px 5px grey;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.courses-card p {
+    margin: 0;
+}
+
+.courses ul li button:hover {
+
+    box-shadow: none;
+    background-color: #508a91a6;
 }
 
 footer {
