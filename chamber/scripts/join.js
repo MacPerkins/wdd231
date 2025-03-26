@@ -68,6 +68,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function setDateTime(event) {
     const now = new Date();
-    document.getElementById('date').value = now.toLocaleDateString();
-    document.getElementById('time').value = now.toLocaleTimeString();
+    const dateTimeString = `${now.toLocaleDateString()} ${now.toLocaleTimeString()}`;
+    document.getElementById('dateTime').value = dateTimeString;
 }
