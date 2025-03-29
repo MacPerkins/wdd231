@@ -12,6 +12,10 @@ main {
 
 /* ----------Homepage CSS---------- */
 
+.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
 
 .tab2, .tab3, .tab4, .tab6, #sub-tab1, #sub-tab2, #sub-tab3 {
     background-color: #f6f8f4;
