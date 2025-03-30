@@ -386,11 +386,63 @@ form label.top input:required:valid {
     padding: 1rem;
     border: 1px solid grey;
     box-shadow: 0 0 7px grey;
+    background-color: white;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's width and height */
+    overflow: hidden; /* Prevents content from overflowing */
 }
 
 .membership-cards h3 {
     margin: 0;
     margin-bottom: 1rem;
+    text-align: center;
+    word-wrap: break-word; /* Ensures long words break to the next line */
+    overflow-wrap: break-word;
+}
+
+.membership-cards button {
+    display: block;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.25rem;
+    background-color: #324c86;
+    color: white;
+    cursor: pointer;
+    max-width: 90%; /* Ensures the button stays within the container */
+    box-sizing: border-box;
+}
+
+.membership-cards button:hover {
+    background-color: #577399;
+}
+
+.membership-cards section {
+    padding: 1rem;
+    border: 1px solid grey;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    overflow: hidden; /* Prevents content overflow */
+    box-sizing: border-box;
+    text-align: center; /* Centers the content */
+}
+
+@media only screen and (max-width: 650px) {
+    .membership-cards {
+        grid-template-columns: 1fr; /* Ensures one card per row on small screens */
+    }
+
+    .membership-cards section {
+        margin: 0.5rem;
+    }
+
+    .membership-cards h3 {
+        font-size: 1.25rem; /* Adjust font size for smaller screens */
+    }
+
+    .membership-cards button {
+        font-size: 1rem; /* Adjust button font size for smaller screens */
+    }
 }
 
 dialog {
