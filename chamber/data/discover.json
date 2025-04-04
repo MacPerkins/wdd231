@@ -1,0 +1,52 @@
+{
+    "places": [
+        {
+            "name": "Highland Glen Park",
+            "address": "4800 W Knight Ave, Highland, UT 84003",
+            "imageURL": "images/discover/highlandglen.webp",
+            "description": "A fun park with a pond for fishing, walking trails, and picnic areas, with small park sets and restrooms."
+        },
+        {
+            "name": "Alpine Country Club",
+            "address": "4994 N Country Club Dr, Highland, UT 84003",
+            "imageURL": "images/discover/alpineclub.webp",
+            "description": "This private golf course offers scenic views while you enjoy golfing."
+        },
+        {
+            "name": "Murdock Canal Trail",
+            "address": "Highland, UT 84003",
+            "imageURL": "images/discover/murdocktrail.webp",
+            "description": "A paved trail where you can bike, run, and walk as you go past great views of the valley and the companies that call this place home."
+        },
+        {
+            "name": "Highland Splash Pad",
+            "address": "10400 N Alpine Hwy, Highland, UT 84003",
+            "imageURL": "images/discover/splashpad.webp",
+            "description": "This splash pad is perfect for fun times with the kids during the warmer summer months."
+        },
+        {
+            "name": "Dry Creek Trailhead",
+            "address": "10099 N 4800 W, Highland, UT 84003",
+            "imageURL": "images/discover/drycreek.webp",
+            "description": "This trailhead runs past a small reservoir that you can fish at or just enjoy the views on a simple walk."
+        },
+        {
+            "name": "Heritage Park",
+            "address": "10400 N Alpine Hwy, Highland, UT 84003",
+            "imageURL": "images/discover/heritagepark.webp",
+            "description": "This historic park offers a nice open area for activities with the kids, and a historic cabin from the pioneer era."
+        },
+        {
+            "name": "Timpanogos Cave",
+            "address": "2038 Alpine Loop Rd, American Fork, UT 84003",
+            "imageURL": "images/discover/timpanogoscave.webp",
+            "description": "As one of Utah's great National Monuments, you can hike up to this beautiful cave with stunning stalagmites and stalactites."
+        },
+        {
+            "name": "Mountain Ridge Park",
+            "address": "5300 W Civic Center Dr, Highland, UT 84003",
+            "imageURL": "images/discover/mountainridge.webp",
+            "description": "This new park is fun for all members of the family with sports fields, playgrounds, and plenty of open spaces."
+        }
+    ]
+}
