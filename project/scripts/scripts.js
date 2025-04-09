@@ -19,3 +19,11 @@ const formattedDate = lastModifiedDate.toLocaleDateString(undefined, options);
 
 lastModified.textContent = `Last Modified on: ${formattedDate}`;
 
+
+function toggleMenu() {
+    document.getElementById('primaryNav').classList.toggle('open');
+    document.getElementById('hamburgerBtn').classList.toggle('open');
+}
+
+const x = document.getElementById('hamburgerBtn');
+x.onclick = toggleMenu;

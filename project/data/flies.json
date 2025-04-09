@@ -1,0 +1,70 @@
+{
+    "flies": [
+        {
+            "name": "Wooly Bugger",
+            "imageURL": "images/woolybugger.webp",
+            "description": "The Wooly Bugger is one of the most versatile and effective flies for fly fishing. It imitates a variety of aquatic creatures, including leeches, baitfish, and nymphs. This fly is a must-have in any angler's fly box.",
+            "technique": "Cast and retrieve with varying speeds, or use a slow strip to mimic a leech or baitfish. Works well in both still water and streams."
+        },
+        {
+            "name": "Griffiths Gnat",
+            "imageURL": "images/griffithsgnat.webp",
+            "description": "The Griffiths Gnat is a classic dry fly that imitates clusters of midges or small insects on the water's surface. It's particularly effective during midge hatches.",
+            "technique": "Use a light tippet and cast upstream. Let the fly drift naturally on the surface to mimic a cluster of midges."
+        },
+        {
+            "name": "Black Gnat",
+            "imageURL": "images/blackgnat.webp",
+            "description": "The Black Gnat is a traditional dry fly that imitates small black flies or gnats. It's a great choice for fishing in calm waters or during a hatch of small black insects.",
+            "technique": "Cast near the edges of the water or where fish are rising. Allow the fly to float naturally on the surface."
+        },
+        {
+            "name": "Mosquito Fly",
+            "imageURL": "images/mosquitofly.webp",
+            "description": "The Mosquito Fly is a dry fly that mimics the appearance of a mosquito. It's an excellent choice for fishing in the summer when mosquitoes are abundant.",
+            "technique": "Cast near the shorelines or areas with overhanging vegetation. Let the fly sit on the surface to attract fish feeding on insects."
+        },
+        {
+            "name": "Adams Dry Fly",
+            "imageURL": "images/adamsdryfly.webp",
+            "description": "The Adams Dry Fly is a versatile and popular dry fly that imitates a variety of mayflies. It's effective in many fishing conditions.",
+            "technique": "Cast upstream and let the fly drift naturally on the surface. Ideal for fishing in rivers and streams."
+        },
+        {
+            "name": "Elk Hair Caddis",
+            "imageURL": "images/elkhaircaddis.webp",
+            "description": "The Elk Hair Caddis is a buoyant dry fly that imitates adult caddisflies. It's a favorite for fishing in fast-moving waters.",
+            "technique": "Skate or drift the fly on the surface to mimic a caddisfly. Works well in riffles and runs."
+        },
+        {
+            "name": "Pheasant Tail Nymph",
+            "imageURL": "images/pheasanttailnymph.webp",
+            "description": "The Pheasant Tail Nymph is a classic nymph pattern that imitates a wide range of aquatic insects. It's a staple in any fly box.",
+            "technique": "Fish it below the surface using a dead drift or under an indicator. Effective in both still and moving waters."
+        },
+        {
+            "name": "Hare's Ear Nymph",
+            "imageURL": "images/haresearnymph.webp",
+            "description": "The Hare's Ear Nymph is a versatile fly that imitates various nymphs and larvae. It's a go-to pattern for many anglers.",
+            "technique": "Use a dead drift or slow retrieve. Fish it near the bottom where nymphs are commonly found."
+        },
+        {
+            "name": "Royal Wulff",
+            "imageURL": "images/royalwulff.webp",
+            "description": "The Royal Wulff is a high-floating dry fly that attracts fish with its bright colors and bushy profile. It's great for fast-moving waters.",
+            "technique": "Cast upstream and let it drift naturally. Its buoyancy makes it easy to spot in rough waters."
+        },
+        {
+            "name": "Zebra Midge",
+            "imageURL": "images/zebramidge.webp",
+            "description": "The Zebra Midge is a simple yet effective fly that imitates midge pupae. It's a great choice for fishing in clear waters.",
+            "technique": "Fish it under an indicator or as a dropper fly. Works well in both rivers and lakes."
+        },
+        {
+            "name": "Clouser Minnow",
+            "imageURL": "images/clouserminnow.webp",
+            "description": "The Clouser Minnow is a versatile streamer that imitates baitfish. It's effective for a variety of species, including trout, bass, and saltwater fish.",
+            "technique": "Use a strip retrieve to mimic a fleeing baitfish. Fish it in deeper waters or near structures."
+        }
+    ]
+}

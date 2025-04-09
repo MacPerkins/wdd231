@@ -1,0 +1,28 @@
+{
+    "locations": [
+        {
+            "name": "Mill Hollow",
+            "imageURL": "images/millhollow.jpg",
+            "description": "A family favorite of mine to camp, this reservoir offers excellent fly fishing from the shore, or trolling from a kayak or canoe. I've been going here for years, and consistently find lots of fun places to fish around the reservoir, with rainbow, tiger, and brown trout being the most commonly caught fish. If you are lucky, you may spot and try to catch the elusive albino trout that I have seen many times over the years.",
+            "monthsToVisit": "Best times to visit are the spring and fall months like May through October. The roads have no maintenance from November to May, so that determines when you are able to go."
+        },
+        {
+            "name": "Pass Lake",
+            "imageURL": "images/passlake.jpg",
+            "description": "Being one of the lakes along Mirror Lake Highway, Pass Lake is a great spot for fishing that I've always loved to stop at. The Highway has multiple lakes offering fishing, and this one is a must whenever I pass through. The lake is stocked with rainbow and brook trout, and access to the water is easy from the shore. You can walk almost all the way around the lake, so if there are people there, you can find a good few spots for yourself to fish.",
+            "monthsToVisit": "Best times to visit are late spring through early fall, typically from June to September, when the weather is mild and the trails are accessible."
+        },
+        {
+            "name": "MooseHorn Lake",
+            "imageURL": "images/moosehornlake.jpg",
+            "description": "This is another popular lake along Mirror Lake Highway that I recommend. It tends to be busier as there is a campground nearby, but there are lots of good spots to fly fish at from the shore.",
+            "monthsToVisit": "Best visited during the summer months of June through August, when the snow has melted and the lake is easily accessible."
+        },
+        {
+            "name": "Highland Glen Park",
+            "imageURL": "images/highlandglen.jpg",
+            "description": "This is a local favorite of mine, as it is in the Utah Valley area where I live. It's a smaller pond, but offers decent fly fishing from the north shore. There tends to be a lot of park goers, but if you are looking to just get started in fly fishing and to practice casting, this is a good spot, especially if you are limited on time to go fishing.",
+            "monthsToVisit": "Best visited in the warmer months from April to October, when the park is in full bloom and the weather is ideal for outdoor activities."
+        }
+    ]
+}

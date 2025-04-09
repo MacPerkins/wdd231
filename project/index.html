@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Matthew Perkins">
+    <meta name="description" content="Hooked: Utah Fly Fishing with Mac, is an informational page giving beginner fly fishermen basic guides on Mac's favorite locations to fish and his favorite flies and techniques.">
+    <title>Hooked: Utah Fly Fishing with Mac</title>
+    <script src="scripts/scripts.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display&display=swap" rel="stylesheet">    <link rel="stylesheet" href="styles/siteplan.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="icon" href="images/favicon.ico">
+    <meta property="og:title" content="Hooked: Utah Fly Fishing with Mac - Home">
+    <meta property="og:type" content="website">
+    <meta
+        property="og:description"
+        content="Hooked: Utah Fly Fishing with Mac, is an informational page giving beginner fly fishermen basic guides on Mac's favorite locations to fish and his favorite flies and techniques.">
+    <meta property="og:image" content="https://macperkins.github.io/wdd231/project/images/logo.webp">
+    <meta property="og:url" content="https://macperkins.github.io/wdd231/project/index.html">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo-link">
+            <img src='images/logo.webp' alt='Hooked: Utah Fly Fishing with Mac - logo'>
+                <p>Hooked:
+                    Utah Fly Fishing with Mac</p>
+        </a>
+            <nav >
+                <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+                <ul id="primaryNav">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="guide.html">Guide</a></li>
+                    <li><a href="join.html" >Newsletter</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <h1>Welcome to <strong>Hooked: Utah Fly Fishing with Mac</strong></h1>
+            <a href="join.html">Join Our Newsletter</a>
+            <img src="images/hero-image-large.jpg" alt="Pass Lake in the Unitahs" sizes="50vw"
+                srcset="images/hero-image-small.jpg 400w,
+                        images/hero-image-medium.jpg 600w,
+                        images/hero-image-large.jpg 1200w"
+                loading="lazy"
+            >
+        </div>
+        <div class="home-grid">
+            <div class="article">
+                <h2>Fly Fishing Article:</h2>
+                <p>Don't know much about fly fishing? This Wikipedia article goes more in depth into everything fly fishing!</p>
+                <a href="https://en.wikipedia.org/wiki/Fly_fishing" class="button">Fly Fishing Wiki</a>
+            </div>
+            <div class="article">
+                <h2>Simple Guide to Fishing Utah:</h2>
+                <p>If you are looking to get into fly fishing from a local, in this guide I share some of my favorite locations to fly fish and some simple flies you can try to get started!</p>
+                <a href="guide.html" class="button">Explore My Guide</a>
+            </div>
+            <div class="article">
+                <h2>Fish Utah Map:</h2>
+                <p>Check out Utah's division of wildlife app to find the best fishing spots in Utah. You can filter by location, type of fish, and more!</p>
+                <a href="https://dwrapps.utah.gov/fishing/" class="button">View Map</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> - Hooked: Utah Fly Fishing with Mac - Matthew (Mac) Perkins</p>
+        <p id="lastModified">Last Modified on: placeholder</p>
+        <a href="references.html">References Page</a>
+    </footer>
+</body>
+</html>
