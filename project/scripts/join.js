@@ -1,22 +1,9 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const form = document.querySelector('form');
-    const dialog = document.createElement('dialog');
-    dialog.innerHTML = `
-        <p>Thanks for joining our newsletter!</p>
-        <button id="closeDialog">Close</button>
-    `;
-    document.body.appendChild(dialog);
+import { handleFormSubmission, redirectToThankYouPage } from './formHandler.mjs';
 
-    form.addEventListener('submit', (event) => {
-        event.preventDefault();
+const form = document.querySelector('form');
 
-        localStorage.setItem('formSubmitted', 'true');
-
-        dialog.showModal();
-
-        document.getElementById('closeDialog').addEventListener('click', () => {
-            dialog.close();
-            form.reset();
-        });
-    });
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    handleFormSubmission(form);
+    redirectToThankYouPage();
 });

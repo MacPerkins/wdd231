@@ -123,6 +123,16 @@ footer {
     margin: 0;
 }
 
+footer a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+footer a:hover {
+    color: #f6f8f4;
+    text-decoration: underline;
+}
+
 /* ----------Homepage CSS---------- */
 
 
@@ -150,7 +160,7 @@ h2 {
     text-align: left;
 }
 
-.article a, .hero a, .submitBtn {
+.article a, .hero a, .submitBtn, .article-btn, .thank-you-section a {
     text-decoration: none;
     margin: 1rem;
     padding: 0.75rem 1.5rem;
@@ -164,7 +174,7 @@ h2 {
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
 }
 
-.article a:hover, .hero a:hover, .submitBtn:hover {
+.article a:hover, .hero a:hover, .submitBtn:hover, .article-btn:hover, .thank-you-section a:hover {
     background-color: #366d85;
     color: #f6f8f4;
     transform: scale(1.025);
@@ -198,6 +208,58 @@ h2 {
     padding: 0;
     width: 100%;
     height: auto;
+}
+
+dialog {
+    border: none;
+    border-radius: 10px;
+    padding: 2rem;
+    background-color: #f6f8f4;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    box-sizing: border-box;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+dialog h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: black;
+}
+
+dialog p {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+dialog .button {
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #324c86;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+dialog .button:hover {
+    background-color: #577399;
+}
+
+dialog .close-dialog {
+    padding: 0.5rem 1rem;
+    background-color: #ccc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: black;
+}
+
+dialog .close-dialog:hover {
+    background-color: #999;
 }
 
 /* ----------Guide CSS---------- */
@@ -265,6 +327,7 @@ form input, form textarea, form select {
     border: 1px solid #366d85;
     border-radius: 5px;
     outline: none;
+    font-family: "Lora", sans-serif;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -322,6 +385,97 @@ dialog button:hover {
     transform: scale(1.05);
 }
 
+/* ----- Thank You Page ----- */
+
+.thank-you-section {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f6f8f4;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 2rem auto;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.thank-you-section h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: black;
+}
+
+.thank-you-section p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.thank-you-section button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #f6f8f4;
+    background-color: #468faf;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: black;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.thank-you-section button:hover {
+    background-color: #366d85;
+    transform: scale(1.05);
+}
+
+/* ----- Dialog Box ----- */
+.form-data-dialog {
+    border: none;
+    border-radius: 10px;
+    padding: 2rem;
+    background-color: #f6f8f4;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.form-data-dialog h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: black;
+}
+
+.form-data-dialog ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.form-data-dialog ul li {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.form-data-dialog button {
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    background-color: #468faf;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.form-data-dialog button:hover {
+    background-color: #366d85;
+    transform: scale(1.05);
+}
+
 @media only screen and (orientation: landscape) and (max-width: 540px) {
     header a p, .hero h1, .hero a, .article a, .article h2, footer {
         font-size: 1rem;
@@ -344,6 +498,15 @@ dialog button:hover {
     }
 
     .article p {
+        font-size: 1.25rem;
+    }
+
+    .home-grid {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .article-btn {
         font-size: 1.25rem;
     }
 

@@ -1,28 +1,28 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const locationsContainer = document.querySelector('.location-cards');
-    const fliesContainer = document.querySelector('.fly-cards');
+const locationsContainer = document.querySelector('.location-cards');
+const fliesContainer = document.querySelector('.fly-cards');
 
-    const displayLocations = async () => {
-        try {
-            const response = await fetch('data/locations.json');
-            const data = await response.json();
-            const locations = data.locations;
+const displayLocations = async () => {
+    try {
+        const response = await fetch('data/locations.json');
+        const data = await response.json();
+        const locations = data.locations;
 
-            locations.forEach(location => {
-                const card = document.createElement('section');
-                card.classList.add('card');
-                card.innerHTML = `
-                <h3>${location.name}</h3>
-                <img src="${location.imageURL}" alt="${location.name} loading="lazy">
-                <p>${location.description}</p>
-                <p><strong>Best Months to Visit:</strong> ${location.monthsToVisit}</p>
-                `;
-                locationsContainer.appendChild(card);
-            });
-        } catch (error) {
-            console.error('Error fetching locations:', error);
-        }
-    };
+        locations.forEach(location => {
+            const card = document.createElement('section');
+            card.classList.add('card');
+            card.innerHTML = `
+            <h3>${location.name}</h3>
+            <img src="${location.imageURL}" alt="${location.name} loading="lazy">
+            <p>${location.description}</p>
+            <p><strong>Best Months to Visit:</strong> ${location.monthsToVisit}</p>
+            <p><strong>Difficulty Level:</strong> ${location.difficulty}</p>
+            `;
+            locationsContainer.appendChild(card);
+        });
+    } catch (error) {
+        console.error('Error fetching locations:', error);
+    }
+};
 
     const displayFlies = async () => {
         try {
@@ -48,4 +48,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
     displayLocations();
     displayFlies();
-});

@@ -8,7 +8,7 @@
     <meta name="description" content="Hooked: Utah Fly Fishing with Mac, is an informational page giving beginner fly fishermen basic guides on Mac's favorite locations to fish and his favorite flies and techniques.">
     <title>Hooked: Utah Fly Fishing with Mac</title>
     <script src="scripts/scripts.js" defer></script>
-    <script src="scripts/join.js" defer></script>
+    <script type="module" src="scripts/join.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display&display=swap" rel="stylesheet">    <link rel="stylesheet" href="styles/siteplan.css">
@@ -39,7 +39,7 @@
             </nav>
     </header>
     <main>
-        <form method="get">
+        <form method="get" action="thankyou.html">
             <h1>Sign up for our weekly Newsletter for all things fly fishing in Utah!</h1>
             <fieldset>
                 <label class="text">First Name *<input type="text" name="fname" required autocomplete="given-name"></label>
@@ -47,11 +47,11 @@
                 <label class="text">Email *<input type="email" name="email" placeholder="someone@gmail.com" required autocomplete="email"></label>
         
                 <fieldset>
-                    <legend>Newsletter Level *</legend>
-                    <label><input type="checkbox" name="newsletterLevel" value="blog-post"> New Blog Posts</label>
-                    <label><input type="checkbox" name="newsletterLevel" value="gear"> Gear List</label>
-                    <label><input type="checkbox" name="newsletterLevel" value="deals"> Hot Deals on Fishing Gear</label>
-                    <label><input type="checkbox" name="newsletterLevel" value="news"> Major Fishing News</label>
+                    <legend>Newsletter Selection *</legend>
+                    <label><input type="checkbox" name="newsletterSelection" value="blog-post"> New Blog Posts</label>
+                    <label><input type="checkbox" name="newsletterSelection" value="gear"> Gear List</label>
+                    <label><input type="checkbox" name="newsletterSelection" value="deals"> Hot Deals on Fishing Gear</label>
+                    <label><input type="checkbox" name="newsletterSelection" value="news"> Major Fishing News</label>
                 </fieldset>
         
                 <label class="text">Feedback (optional)<textarea name="feedback"></textarea></label>
